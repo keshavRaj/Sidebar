@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		47510D2520E3A1E70051EAEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47510D2420E3A1E70051EAEA /* AppDelegate.swift */; };
-		47510D2720E3A1E70051EAEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47510D2620E3A1E70051EAEA /* ViewController.swift */; };
 		47510D2A20E3A1E70051EAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47510D2820E3A1E70051EAEA /* Main.storyboard */; };
 		47510D2C20E3A1EA0051EAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47510D2B20E3A1EA0051EAEA /* Assets.xcassets */; };
 		47510D2F20E3A1EA0051EAEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47510D2D20E3A1EA0051EAEA /* LaunchScreen.storyboard */; };
+		47510D3720E3A3BA0051EAEA /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47510D3620E3A3BA0051EAEA /* SampleData.swift */; };
+		47510D3920E3A5FC0051EAEA /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47510D3820E3A5FC0051EAEA /* ProductTableViewController.swift */; };
+		47510D3B20E3AAD80051EAEA /* SlideContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47510D3A20E3AAD80051EAEA /* SlideContainerViewController.swift */; };
+		47510D3D20E3B0410051EAEA /* ProductTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47510D3C20E3B0410051EAEA /* ProductTypeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		47510D2120E3A1E60051EAEA /* SildeOutBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SildeOutBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47510D2420E3A1E70051EAEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47510D2620E3A1E70051EAEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47510D2920E3A1E70051EAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47510D2B20E3A1EA0051EAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47510D2E20E3A1EA0051EAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47510D3020E3A1EA0051EAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47510D3620E3A3BA0051EAEA /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		47510D3820E3A5FC0051EAEA /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		47510D3A20E3AAD80051EAEA /* SlideContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideContainerViewController.swift; sourceTree = "<group>"; };
+		47510D3C20E3B0410051EAEA /* ProductTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTypeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				47510D2420E3A1E70051EAEA /* AppDelegate.swift */,
-				47510D2620E3A1E70051EAEA /* ViewController.swift */,
 				47510D2820E3A1E70051EAEA /* Main.storyboard */,
 				47510D2B20E3A1EA0051EAEA /* Assets.xcassets */,
 				47510D2D20E3A1EA0051EAEA /* LaunchScreen.storyboard */,
 				47510D3020E3A1EA0051EAEA /* Info.plist */,
+				47510D3A20E3AAD80051EAEA /* SlideContainerViewController.swift */,
+				47510D3C20E3B0410051EAEA /* ProductTypeTableViewController.swift */,
+				47510D3820E3A5FC0051EAEA /* ProductTableViewController.swift */,
+				47510D3620E3A3BA0051EAEA /* SampleData.swift */,
 			);
 			path = SildeOutBar;
 			sourceTree = "<group>";
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47510D2720E3A1E70051EAEA /* ViewController.swift in Sources */,
+				47510D3B20E3AAD80051EAEA /* SlideContainerViewController.swift in Sources */,
 				47510D2520E3A1E70051EAEA /* AppDelegate.swift in Sources */,
+				47510D3920E3A5FC0051EAEA /* ProductTableViewController.swift in Sources */,
+				47510D3720E3A3BA0051EAEA /* SampleData.swift in Sources */,
+				47510D3D20E3B0410051EAEA /* ProductTypeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

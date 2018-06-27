@@ -12,10 +12,29 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    private let ProductNavigationController = "ProductNavigationController"
+    private let ProductTypeNavigationController = "ProductTypeNavigationController"
+    private var productTableVC: ProductTableViewController!
+    private var slideContainerVC: SlideContainerViewController!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        let productNavController = storyboard.instantiateViewController(withIdentifier: ProductNavigationController) as! UINavigationController
+        productTableVC = productNavController.viewControllers[0] as! ProductTableViewController
+        productTableVC.productDicArr = Products[0]
+        productTableVC.navigationItem.title = ProductTypes[0]
+        productTableVC.delegate = self
+        
+        let productTypeNavController = storyboard.instantiateViewController(withIdentifier: ProductTypeNavigationController) as! UINavigationController
+        (productTypeNavController.viewControllers[0] as! ProductTypeTableViewController).delegate = self
+        
+        slideContainerVC = SlideContainerViewController(sideViewController: productTypeNavController, mainViewController: productNavController, overlap: 80)
+        window?.rootViewController = slideContainerVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -42,5 +61,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate: ProductTypeTableViewControllerDelegate, ProductTableViewControllerDelegate{
+    
+    func ProductTypeTableViewController(didSelectRow row: Int) {
+        productTableVC.navigationItem.title = ProductTypes[row]
+        productTableVC.productDicArr = Products[row]
+        productTableVC.tableView.reloadData()
+        slideContainerVC.toggleSideBar(true)
+    }
+    
+    func barButtonTapped() {
+        slideContainerVC.toggleSideBar(true)
+    }
 }
 

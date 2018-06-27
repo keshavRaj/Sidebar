@@ -2,7 +2,7 @@
 //  ProductTableViewController.swift
 //  SildeOutBar
 //
-//  Created by Krrish on 27/06/18.
+//  Created by Keshav Raj on 27/06/18.
 //  Copyright © 2018 Keshav Raj. All rights reserved.
 //
 
